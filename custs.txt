@@ -1,0 +1,11 @@
+custid,fullname,age,profession
+C001,John Smith,34,Software Engineer
+C002,Mary Johnson,28,Data Analyst
+C003,Robert Brown,45,Project Manager
+C004,Linda Davis,39,Teacher
+C005,Michael Wilson,52,Doctor
+C006,Emily Taylor,26,Graphic Designer
+C007,David Anderson,31,Accountant
+C008,Jennifer Thomas,41,Marketing Manager
+C009,Christopher Lee,29,Sales Executive
+C010,Sarah White,36,HR Specialist
