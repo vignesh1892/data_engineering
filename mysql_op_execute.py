@@ -11,7 +11,6 @@ with open("custs.txt","r") as file:
 
 prof_cnt = mydb.execute_query("select count(*) cnt,profession from kbnhzraf_ticketdb.tblcustomer_vignesh group by profession")
 
-print(prof_cnt)
 
 with open("prof_count.txt","w") as file:
     for row in prof_cnt:
