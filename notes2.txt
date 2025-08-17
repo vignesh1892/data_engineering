@@ -1,0 +1,6 @@
+Python is fun
+I am learning file handling
+File operations are useful
+Practice makes perfect
+End of file
+End of Notes
