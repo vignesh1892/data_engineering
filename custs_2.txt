@@ -1,0 +1,3 @@
+custid,fullname,age,profession
+C011,Santhosh,34,Software Engineer
+C012,Pandey,28,Data Analyst
