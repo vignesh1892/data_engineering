@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "address": {"city": "New York", "zip": "10001"}
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "address": {"city": "London", "zip": "SW1A"}
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "address": {"city": "Paris", "zip": "75001"}
+  }
+]
