@@ -72,12 +72,32 @@ print("Files merged successfully into merged.txt")
 """
 #Advanced Tasks
 #Write a program to read a CSV file and print only selected columns.
-with open("marks.csv") as f:
+import csv
+with open("marks.csv","r") as f,open("marks_output.csv","w") as w:
+    reader_markdt=csv.DictReader(f)
+    fieldnames = ["Name", "English"]
+    writer_markdt=csv.DictWriter(w,fieldnames)
+    writer_markdt.writeheader()
+
+    for row in reader_markdt:
+        writer_markdt.writerow({col:row[col] for col in fieldnames})
+
+#Read a file and replace a given word with another word. Save result to a new file.
+with open("marks.csv","r") as f:
     markdt=f.readlines()
-    print(markdt)
-    for i in markdt[:1]:
-        markdtlst=i.split(",")
-        print(markdtlst[0])
+    markdtlst= [i.replace("Alice","Vignesh") for i in markdt]
+    print(markdtlst)
+#Read a log file and extract only lines that contain the word "ERROR".
+with open("log.txt","r") as f:
+    markdt=f.readlines()
+    for i in markdt:
+        if "ERROR" in i:
+            print(i)
+
+
+
+
+
 
 
 
