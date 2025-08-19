@@ -32,3 +32,16 @@ print(df1)
 # access few columns:
 df1=df[["custid","age"]]
 print(df1)
+
+##loc and iloc and corresponding row that we're providing in the first param:
+df2=df.loc[2,"custid"]
+print(df2)
+df2=df.iloc[2,0]
+print(df2)
+
+##query part 
+df2=df.query("age > 28")
+print(df2)
+
+df2=df[["custid","age"]].query("age > 28")
+print(df2)
