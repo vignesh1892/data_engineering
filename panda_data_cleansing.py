@@ -46,9 +46,6 @@ print(df2)
 df2=df2.groupby("User_ID").size().reset_index(name="cnt")
 print(df2)
 
-#select city,state,sum(amount) as total_count,count(txnid) as txn_count from txns group by city,state
-
-#df3=(df.groupby(["City","State"]))
 
 ##sort single and multiple columns
 df.sort_values("State")
@@ -101,6 +98,12 @@ def cal_discount(state):
 df["discount"]=df["State"].apply(cal_discount)
 print(df)
 
+#select city,state,sum(amount) as total_count,count(txnid) as txn_count from txns group by city,state
+df3=(df.groupby(["City","State"]).agg(txn_count=("User_ID","count"),total_amt=("Amount","sum"),avg_amt=("Amount","mean"))
+     .query("txn_count>1")
+     .reset_index()
+     .sort_values(by="txn_count",ascending=False))
+print(df3)
 
 
 
