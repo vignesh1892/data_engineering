@@ -13,3 +13,5 @@ venv/
 
 # Ignore temporary files
 *.tmp
+
+.vscode
