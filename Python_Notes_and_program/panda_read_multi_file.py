@@ -33,3 +33,7 @@ with rarfile.RarFile(zip_path, "r") as z:
                 df = pd.read_csv(f)
                 all_df.append(df)
 
+final_df_zip= pd.concat(all_df)
+print("final_df_zip")
+print(final_df_zip)
+

@@ -95,6 +95,51 @@ def outer():
 fn = outer()
 print(fn())
 
+"""
+➤ Common Higher-Order Functions
+
+✔ map() → Apply a function to all items in a list
+✔ filter() → Filter items based on a condition
+✔ reduce() → Aggregate values
+✔ Custom decorators → Modify behavior of functions
+"""
+nums = [1, 2, 3, 4]
+squares = list(map(lambda x: x**2, nums))
+print(squares)  # Output: [1, 4, 9, 16]
+
+"""
+➤ Closures vs Higher-Order Functions
+| Aspect       | Higher-Order Functions          | Closures                             |
+| ------------ | ------------------------------- | ------------------------------------ |
+| What it does | Accepts/returns functions       | Remembers variables from outer scope |
+| Focus        | Functional behavior abstraction | Maintaining state over time          |
+| Use cases    | `map()`, `filter()`, decorators | Counters, data encapsulation         |
+| Relationship | Closures can be used in HOFs    | Can be returned from HOFs            |
+
+✅ Decorators in Python – Complete Explanation
+➤ What is a Decorator?
+
+A decorator is a special type of higher-order function that modifies or enhances the 
+behavior of another function without changing its code. 
+It “wraps” the original function, adding functionality before or after the function runs.
+"""
+#➤ Step 1 – Define a decorator function
+
+def my_decorator(func):
+    def wrapper():
+        print("Before calling the function")
+        func()
+        print("After calling the function")
+    return wrapper
+#➤ Step 2 – Apply it to a function
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
+
+
+
 
 
  

@@ -1,2 +1,5 @@
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+#install: 
+python -m venv venv
+
 .\venv\Scripts\activate
