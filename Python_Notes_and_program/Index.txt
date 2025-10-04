@@ -1,0 +1,11 @@
+1. Collection Types
+2. Loops
+3. Comprehension & Generator
+4. Functions
+5. File handling
+6. Exception handling
+7. Class
+    Methods
+    Inheritance
+8. Date Time Functions
+9. DB operations
