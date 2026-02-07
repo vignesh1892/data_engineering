@@ -1,2 +1,2 @@
-This is file A.
+This is file A. This
 It has a few lines.

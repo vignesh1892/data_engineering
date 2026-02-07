@@ -1,0 +1,11 @@
+custid,fullname
+C001,John Smith
+C002,Mary Johnson
+C003,Robert Brown
+C004,Linda Davis
+C005,Michael Wilson
+C006,Emily Taylor
+C007,David Anderson
+C008,Jennifer Thomas
+C009,Christopher Lee
+C010,Sarah White
